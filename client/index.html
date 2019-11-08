@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="main.js"></script>
+	<style type="text/css">
+	#messages{
+		border: 1px solid green;
+		height: 100px;
+		padding: 5px;
+		overflow-y: scroll;
+		width: 300px;
+	}
+	.message{
+		border-bottom: 1px solid gray;
+		padding: 2px;
+	}
+	</style>
+</head>
+<body>
+
+	<p>
+		index aaa
+	</p>
+	<br />
+	<div id="messages"></div>
+	<form onsubmit="return addMsg(this)">
+		<input type="text" placeholder="NIck" id="nick" />
+		<textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+		<br />
+		<button type="submit">ok</button>
+	</form>
+	
+</body>
+</html>
